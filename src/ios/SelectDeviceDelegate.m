@@ -124,7 +124,7 @@ didConnectToCastApplication:(GCKApplicationMetadata *)applicationMetadata
                           launchedApplication, @"launchedApplication",
                           applicationMetadata.senderAppLaunchURL, @"senderAppLaunchURL", nil];
 	
-	   self.textChannel = [[DeviceTextChannel alloc] initWithNamespace:@"urn:x-cast:com.connectsdk"];
+	   self.textChannel = [[DeviceTextChannel alloc] initWithNamespace:@"urn:x-cast:br.com.wancharle"];
     [self.deviceManager addChannel:self.textChannel];
 
     CDVPluginResult *pluginResult;

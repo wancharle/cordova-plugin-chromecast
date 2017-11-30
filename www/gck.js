@@ -438,9 +438,9 @@ exports.selectDeviceById = function (deviceID) {
         return Promise.reject(false);
     }
 
-    if (t.devices.indexOf(device) == -1) {
-        return Promise.reject(false);
-    }
+   // if (t.devices.indexOf(device) == -1) {
+    //    return Promise.reject(false);
+    //}
 
     for(var i=0;i<_devicesLength;i++){
         //matched ID to available device
