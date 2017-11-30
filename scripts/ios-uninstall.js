@@ -14,5 +14,5 @@ exec(commands.rmRF + " " + safePath("./csdk_tmp"), {}, function (err) {
 	if (err) {
 		console.error("There was an error removing the platforms/ios/csdk_tmp directory. Please remove this folder.");
 	}
-	console.log("cordova-plugin-chromecastios iOS uninstall finished");
+	console.log("cordova-plugin-chromecast iOS uninstall finished");
 });

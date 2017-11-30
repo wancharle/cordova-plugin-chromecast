@@ -37,7 +37,7 @@ if (!isMac) {
 	];
 
 	iOSInstall.prototype.start = function () {
-		console.log("Starting cordova-plugin-chromecastios install, fetching castSDK");
+		console.log("Starting cordova-plugin-chromecast install, fetching castSDK");
 
 		var self = this;
 
@@ -56,7 +56,7 @@ if (!isMac) {
 				self.revertStep(step);
 			});
 		} else {
-			console.log("cordova-plugin-chromecastios iOS install finished");
+			console.log("cordova-plugin-chromecast iOS install finished");
 		}
 	};
 
@@ -70,7 +70,7 @@ if (!isMac) {
 				console.error("An error occured while reverting the install.");
 			});
 		} else {
-			console.log("cordova-plugin-chromecastios iOS install reverted");
+			console.log("cordova-plugin-chromecast iOS install reverted");
 		}
 	};
 
@@ -79,12 +79,12 @@ if (!isMac) {
 			.then(function (files) {
 			for (var i = 0; i < files.length; i++) {
 				if (files[i].indexOf('.xcodeproj') !== -1) {
-					csdkDirectory = "./" + files[i].substring(0, files[i].indexOf('.xcodeproj')) + "/Plugins/cordova-plugin-chromecastios";
+					csdkDirectory = "./" + files[i].substring(0, files[i].indexOf('.xcodeproj')) + "/Plugins/cordova-plugin-chromecast";
 					console.log("created temp dir");
 					return Q.nfcall(fs.mkdir, safePath('./tmp'));
 				}
 			}
-			return Q.reject("Could not find cordova-plugin-chromecastios plugin directory");
+			return Q.reject("Could not find cordova-plugin-chromecast plugin directory");
 		});
 	};
 
