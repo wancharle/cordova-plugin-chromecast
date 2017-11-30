@@ -3,14 +3,14 @@
   "version": "1.0.6",
   "description": "Cordova plugin for using Chromecast devices from iOS",
   "cordova": {
-    "id": "cordova-plugin-chromecastios",
+    "id": "cordova-plugin-chromecast",
     "platforms": [
       "ios"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ghenry22/cordova-plugin-chromecastios"
+    "url": "git+https://github.com/wancharle/cordova-plugin-chromecast"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -25,10 +25,10 @@
       "version": ">=3.8.0"
     }
   ],
-  "author": "Gaven Henry",
+  "author": "Wancharle",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ghenry22/cordova-plugin-chromecastios/issues"
+    "url": "https://github.com/wancharle/cordova-plugin-chromecast/issues"
   },
-  "homepage": "https://github.com/ghenry22/cordova-plugin-chromecastios#readme"
+  "homepage": "https://github.com/wancharle/cordova-plugin-chromecast#readme"
 }
